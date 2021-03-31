@@ -35,11 +35,11 @@ collections:
 
 navigation:
   - name: Getting started
-      link: /start.html
+    link: /start.html
   - name: RPV MJ
-      link: /rpvmj.html
+    link: /rpvmj.html
   - name: Multi-b
-      link: /multib.html
+    link: /multib.html
 
 paginate: 3
 paginate_path: "/blog/page:num/"
