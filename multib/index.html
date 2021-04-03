@@ -1,0 +1,13 @@
+---
+layout: page
+title:  "Multi-b"
+permalink: multib.html
+---
+
+  {%- if site.multib.size > 0 -%}
+  {%- for project in site.multib -%}
+  {% include projectitem.html %}
+  {%- endfor -%}
+  {%- endif -%}
+
+

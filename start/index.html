@@ -1,0 +1,12 @@
+---
+layout: page
+title:  "Getting started"
+permalink: start.html
+---
+
+  {%- if site.start.size > 0 -%}
+  {%- for project in site.start -%}
+  {% include projectitem.html %}
+  {%- endfor -%}  
+  {%- endif -%}
+
