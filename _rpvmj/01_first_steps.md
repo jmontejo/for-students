@@ -1,6 +1,6 @@
 ---
 title: First steps in the analysis
-link: /projects/rpvmj-first-steps/index.html
+link: https://crizzi.web.cern.ch/projects/rpvmj-first-steps/
 tags: rpvmj
 ---
 
