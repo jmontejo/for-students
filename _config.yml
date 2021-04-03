@@ -3,8 +3,8 @@ email: chiara.rizzi@cern.ch
 description: >- # this means to ignore newlines until "baseurl:"
   Material for students
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/students" # the subpath of your site, e.g. /blog
+url: "https://crizzi.web.cern.ch" # the base hostname & protocol for your site, e.g. http://example.com
 gitlab_username:  crizzi
 
 # Build settings
@@ -34,11 +34,11 @@ collections:
 
 navigation:
   - name: Getting started
-    link: /start.html
+    link: start.html
   - name: RPV MJ
-    link: /rpvmj.html
+    link: rpvmj.html
   - name: Multi-b
-    link: /multib.html
+    link: multib.html
 
 paginate: 3
 paginate_path: "/blog/page:num/"
