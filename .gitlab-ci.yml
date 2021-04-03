@@ -13,12 +13,12 @@ build:
     JEKYLL_ENV: production
     LC_ALL: C.UTF-8
   before_script:
-    -  git clone https://github.com/cookiepink/jekyll-theme-candypink.git candypink
-    - cd candypink 
+    - git clone https://gitlab.cern.ch/crizzi/jekyll-theme-chiara.git jekyll-theme-chiara
+    - cd jekyll-theme-chiara 
     - rm -rf .git* .travis.yml README.md LICENSE.txt _config.yml 
     - cd ../
-    - mv candypink/* .
-    - rm -rf candypink
+    - mv jekyll-theme-chiara/* .
+    - rm -rf jekyll-theme-chiara
     - gem install bundler
     - bundle install
   script: # Generate public site and deploy
