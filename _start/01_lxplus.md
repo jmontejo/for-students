@@ -1,6 +1,6 @@
 ---
 title: Using LXPLUS
-link: https://cookiepink.github.io/ItalianWeddings/
+link: start/lxplus.html
 tags: lxplus
 ---
 
