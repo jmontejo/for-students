@@ -15,7 +15,7 @@ build:
   before_script:
     - git clone https://gitlab.cern.ch/crizzi/jekyll-theme-chiara.git jekyll-theme-chiara
     - cd jekyll-theme-chiara 
-    - rm -rf .git* .travis.yml README.md LICENSE.txt _config.yml 
+    - rm -rf .git* .travis.yml README.md LICENSE.txt 
     - cd ../
     - mv -vn jekyll-theme-chiara/* .
     - rm -rf jekyll-theme-chiara
