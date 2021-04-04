@@ -46,7 +46,10 @@ Notes:
 every time you push to your GitLab repo you will be requested to
 insert your username and password.
 There's a way around that, and we'll set this up in the coming days, but for now it might be easier to start with this
-- when you do `git add .` It will add to the git repository all the files you have in your folder. This means that all the files you have in your repository will be tracked and available online. This might not be what you want, for example you do not want to add have files like ROOT files, or there might be some junk files you do not want to add, or the temporary files that are sometime created by text editors. To avoid this, instead go `git add .`, you can just do `git add your-file-name.py` (and do it multiple times if there are several files you want to add). 
+- when you do `git add ` it will add to the git repository all the files you have in your folder.
+This means that all the files you have in your repository will be tracked and available online. This might not be what you want, for example you do not want to add have files like ROOT files, or there might be some junk files you do not want to add, or the temporary files that are sometime created by text editors. To avoid this, instead go `git add .`, you can just do `git add your-file-name.py` (and do it multiple times if there are several files you want to add). 
 - every time you want to add a new file to your git repository you need to do the `add`, `commit` and `push` steps
 - every time you make a change to a file that is already part of your git repo, you just need to do the `commit` and `push` steps 
-- the `git status` command will show you which files are in which stage 
+- the `git status` command will show you which files are in which stage. 
+- The `push` step is the one that transmits the information to the web tool.
+After that you should be able to see the files in the project url (the same one where previously you had the instructions). 
