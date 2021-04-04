@@ -42,6 +42,10 @@ The activation of the eos service is described below.
 
 ## Activate eos service and increase your storage space 
 
+You can manace your services on the [CERN Resources Portal](https://resources.web.cern.ch/resources/).
+From there, select the tab `List services`. This will dsplay all the available services:
+![services](/students/images/start/lxplus/services.png)
+
 ## Text editors
 
 If you wish to use programs with a graphical interface, you can do:
