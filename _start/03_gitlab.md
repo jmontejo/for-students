@@ -52,4 +52,21 @@ This means that all the files you have in your repository will be tracked and av
 - every time you make a change to a file that is already part of your git repo, you just need to do the `commit` and `push` steps 
 - the `git status` command will show you which files are in which stage. 
 - The `push` step is the one that transmits the information to the web tool.
-After that you should be able to see the files in the project url (the same one where previously you had the instructions). 
+After that you should be able to see the files in the project url (the same one where previously you had the instructions).
+
+## ssh key pair
+
+You can use different protocols to transmit the information to gitlab. The instructions above are based on http,
+and this way you don't have to do anything specific to set it up, but you have to type your password all the times. 
+You can also use the ssh protocol (which is actually the suggested one), but to do that you need to setup an ssh key pair. You can find instructions on how to do it [here](https://docs.gitlab.com/ee/gitlab-basics/create-your-ssh-keys.html).
+
+After you do that, you can use ssh instead of http. In practice you won't notice any difference. 
+After creating and setting up the ssh key, to setup remote through the ssh protocol, you need the ssh path of your repository.
+You can find it by clicking on `Clone` in the top-right corner. Then:
+- if this is the first time you are adding the files on GitLab, follow the same steps as above, but replace the http path by
+the ssh path. 
+- if you had previously the ssh protocol, and want to switch to the ssh one:
+`git remote set-url origin ssh-path`,
+where `ssh-path` is the same path mentioned above. 
+
+After that you should be automatically using ssh every time you pull or push. 
