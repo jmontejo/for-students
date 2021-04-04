@@ -6,6 +6,7 @@ tags: lxplus
 output: true
 layout: post
 description: Basic instructions on how to connect to lxplus, and suggestions on text editors
+image: images/start/lxplus/logo.png
 ---
 
 ## Connect to LXPLUS 2

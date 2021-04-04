@@ -5,6 +5,7 @@ permalink: start/root.html
 tags: root
 layout: post
 description: References to ROOT tutorials and other material
+image: images/start/root/logo.png
 ---
 
 ## Tutorials
