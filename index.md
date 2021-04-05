@@ -8,10 +8,3 @@
 layout: home
 ---
 
-Welcome!
-
-Here you can find a selection of instructions, references and example projects that can
-help you getting started with your own project!
-
-ciao,
-Chiara 
