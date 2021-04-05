@@ -5,4 +5,5 @@ cd ../
 mv -vn jekyll-theme-chiara/* .
 rm -rf jekyll-theme-chiara
 gem install bundler
+bundle install
 bundle exec jekyll serve --trace
