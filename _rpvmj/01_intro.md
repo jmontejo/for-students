@@ -12,5 +12,5 @@ image: images/rpvmj/intro/logo.png
 
 Introductory slides: SUSY searches and the RPV multijets analysis. 
 
-<embed src="/students/images/rpvmj/intro/intro_rpv_multijet.pdf" width="500" height="375" 
+<embed src="/students/images/rpvmj/intro/intro_rpv_multijet.pdf" width="560" height="375" 
  type="application/pdf">
