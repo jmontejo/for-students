@@ -22,12 +22,13 @@ ssh username@lxplus.cern.ch
 (use the same password of your account)
 
 You will be connected to the machine with the best response. 
-Once you connect, you are directed automatically to your home directory on [afs](https://information-technology.web.cern.ch/services/afs-service) (see below).
-Here you can keep your code files (e.g. clone here your GitHub repo, or write new code). 
+From the lxplus machines, you have access to the afs filesystem and also eos, which are suitable for file storing. 
+AFS is a service that provides networked file storage. You will have your home directory in afs, but also a workspace with more
+storage space.  
+When you connect to lxplus, you are directed automatically to your home directory on [afs](https://information-technology.web.cern.ch/services/afs-service). 
+Here you can keep your code files (e.g. clone here your GitHub repo, or write new code).
 
-From the lxplus machines, you have access to the afs filesystem and also eos, which are more suitable for file storing. 
-AFS is a service that provides networked file storage. You will have your home directory in afs, but also work space.
-Another network file stystem widely used is [CVMFS](https://cvmfs.readthedocs.io/en/stable/cpt-quickstart.html).
+Another network file system widely used is [CVMFS](https://cvmfs.readthedocs.io/en/stable/cpt-quickstart.html).
 You don't need it right now but it's good to know it exists.
 
 When you have large files, the easiest option is to store them on [EOS](https://information-technology.web.cern.ch/services/eos-service), 
@@ -49,7 +50,7 @@ To recap, the storage spaces where you can keep your files are:
 ## Activate eos service and increase your storage space 
 
 You can manace your services on the [CERN Resources Portal](https://resources.web.cern.ch/resources/).
-From there, select the tab `List services`. This will dsplay all the available services:
+From there, select the tab `List services`. This will display all the available services:
 ![services](/students/images/start/lxplus/services.png)
 
 Please make sure you have subscribed to the following services:
@@ -60,7 +61,7 @@ Please make sure you have subscribed to the following services:
 Note: when you click on `AFS Workspaces`, you should check the settings (you can
 select that from the menu on the left). Here you can increase the space in
 your afs home and workspace up to 10 and 100 GB respectively,
-ans also see the path for how to find these areas from lxplus. 
+and also see the path for how to find these areas from lxplus. 
 
 ## Text editors
 
@@ -80,8 +81,10 @@ will open the file with emacs but inside the terminal, without the need of a gra
 This greatly reduces issues with slow connections. 
 Once you do this, the commands you need to use is the same as for normal usage of emacs
 (which you can easily find online if you don't already know them, see e.g. [here](https://www.gnu.org/software/emacs/manual/html_node/emacs/Basic.html), 
-but there are several other useful resources online). 
-This is just an example, there are several other text editors that can work from the terminal, and you can of course use the one you are most comfortable with.
+but there are several other useful resources online).
+Emacs is already available on lxplus, so there's no need to install it there. 
+This is just an example, there are several other text editors that can work from the terminal,
+and you can of course use the one you are most comfortable with.
 
 ## ATLAS software
 
@@ -91,6 +94,7 @@ setupATLAS
 ```
 This is an alias for `/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/user/atlasLocalSetup.sh`. 
 After you type it you will see a list of commands you can type to setup various ATLAS computing tools. 
+Which tools you need depends on the specific task you need to carry out. 
 
 ## Copy files to your local machine
 
