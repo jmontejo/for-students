@@ -14,8 +14,11 @@ image: images/start/root/logo.png
 ## Tutorials and references
 
 - The [ROOT primer](https://root.cern/primer/) is a very good tutorial, that starts from zero and walks you through
-all the most important ROOT functionalities. It is also a good reference to look at in case of basic questions.
-- Each ROOT cass has its own class reference page. E.g. [this](https://root.cern.ch/doc/master/classTTree.html)
+all the most important ROOT functionalities. It is also a good reference to look at in case of basic questions. If this is your first experience with ROOT, the ROOT primer is a great starting point. 
+- Each ROOT class has its own class reference page. E.g. [this](https://root.cern.ch/doc/master/classTTree.html)
 is the page for TTree. Here you can find examples and documentation for all the related functions. 
+
+## Additional information 
+
 - The [ATLAS software tutorial](https://atlassoftwaredocs.web.cern.ch/ABtutorial/) covers much more advanced topics,
 to show you how ROOT is used in complex analyses setups. 
