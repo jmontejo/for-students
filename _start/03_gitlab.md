@@ -10,7 +10,13 @@ image: images/start/git/icon.jpg
 
 ## Git and GitLab
 
-GitLab is a tool that allows for an easy usage of git repositories (for version control)
+[Git](https://git-scm.com/) is an open-source version control system (a software that
+helps keeping track of changes in files, which is very useful both for personal use but
+especially for collaborative efforts).  
+
+[GitLab](https://about.gitlab.com/) is a web-based
+DevOps platform.
+It is a tool that allows for an easy usage of git repositories (for version control)
 and also for continuous integration/deployment (very similar to GitHub).
 Having your code on GitLab has many advantages
 (it makes it easier to collaborate on the same code, and it allows you to setup automatic actions--this is how this website is built!), 
@@ -18,9 +24,6 @@ but for the moment we can focus on the ones related to version control.
 This basically means that you can use it to always have a backup of your code,
 where you can access at any moment all the old versions.
 Your code will also be accessible online, so that you can show it to other people. 
-
-
-## Basic git instructions
 
 ## Add your code in GitLab
 
@@ -70,3 +73,31 @@ the ssh path.
 where `ssh-path` is the same path mentioned above. 
 
 After that you should be automatically using ssh every time you pull or push. 
+
+## Basic git instructions
+
+GitLab has a very well documented general [Docs](https://docs.gitlab.com/) site.
+In particular, at [this page](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
+you can find a good description of most of the usual git operations, the interplay with
+GitLab, and how to operate it from the command line. 
+
+Also, running:
+```
+git --help
+```
+will show you the most common git commands with a short explanation.
+Some commands that you will likely use frequently are:
+* `git status`: check the status of the changes in your working directory
+* `git add <file-name OR folder-name>`: prepare a local file or directory to be committed. If the
+file was already saved in git, this tells git to prepare to save the changes to the file. If the file was
+previously not in git, this tells git that from now on you want to include this file in the list of files to
+keep track of. 
+* `git commit -m "your comment to the changes"`: save the changes (commit). Please make sure to use a short but descriptive
+commit message.
+    *  Shortcut: `git commit -a -m "your comment to the changes"`: with the `-a` option, git automatically adds all the changes to the files
+    that you are already keeping track of, so there's no need to do the `git add` step, unless you want to add new files. 
+* `git push <remote> <name-of-branch>`: send the changes to GitLab.com
+* `git pull`: download the recent changes in the repository (e.g. if you are collaborating with somebody else).
+
+To have all the most important commands in a single pdf, you can take a look
+at the [GitHub GIT CHEAT SHEET](https://education.github.com/git-cheat-sheet-education.pdf). 
