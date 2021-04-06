@@ -17,6 +17,8 @@ image: images/start/root/logo.png
 all the most important ROOT functionalities. It is also a good reference to look at in case of basic questions. If this is your first experience with ROOT, the ROOT primer is a great starting point. 
 - Each ROOT class has its own class reference page. E.g. [this](https://root.cern.ch/doc/master/classTTree.html)
 is the page for TTree. Here you can find examples and documentation for all the related functions. 
+- [pyROOT](https://root.cern/manual/python/) is ROOT's Python-C++ bindings, and it allows to use ROOT from python.
+It is very useful to quickly produce plots! Here you can find examples and tutorials. 
 
 ## Additional information 
 
