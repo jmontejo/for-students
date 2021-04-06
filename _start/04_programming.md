@@ -4,9 +4,8 @@ link: start/programming.html
 permalink: start/programming.html
 tags: python
 layout: post
-description: Links to resources useful to review your programming skills and get the hang of
-machine learning 
-image: images/start/programming/programming.jpg
+description: "Links to resources useful to review your programming skills and get the hang of machine learning"
+image: images/start/programming/programming.png
 ---
 
 ## Python
