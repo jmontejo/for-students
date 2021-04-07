@@ -12,8 +12,15 @@ image: images/start/programming/programming.png
 - [Google's Python Class](https://developers.google.com/edu/python) is a free python course, targeting
 people with no knowledge of python but who have programmed in other languages before 
 
+## C++
+- If you already know the basics of C++, and are looking for information on a
+specific aspect, or how to use a specific library or function, [cppreference.com](https://en.cppreference.com/w/)
+is a good starting point for your research. E.g., if you don't remember how to add elements to a vector,
+you can find examples in the page dedicated to [std::vector::push_back](https://www.cplusplus.com/reference/vector/vector/push_back/)
+(reachable through the general [std::vector](https://www.cplusplus.com/reference/vector/vector/) page. 
+
 ## Machine learning
-- Andrew Ng's [Machine Learning course on coursera] is a great startin point.
+- Andrew Ng's [Machine Learning course on coursera] is a great starting point.
 It's a very clear course, that doesn't dive too deep into the mathematical aspects but
 covers all the basics that you need.
     - If you liked the course above, you might want to take a look at the notes from other people who have followed it, e.g.: the blog entry
