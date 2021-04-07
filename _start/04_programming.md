@@ -20,7 +20,8 @@ you can find examples in the page dedicated to [std::vector::push_back](https://
 (reachable through the general [std::vector](https://www.cplusplus.com/reference/vector/vector/) page. 
 
 ## Machine learning
-- Andrew Ng's [Machine Learning course on coursera] is a great starting point.
+- Andrew Ng's [Machine Learning course on coursera](https://www.coursera.org/learn/machine-learning?action=enroll&adgroupid=73238990061&adpostion=&campaignid=2070742271&creativeid=369041663030&device=c&devicemodel=&gclid=CjwKCAjwr_uCBhAFEiwAX8YJgcnfbTxzxscODBuNMYrk_AFd0iXpopLtMOigVr5omWNp2CbvlZotLhoCJdwQAvD_BwE&hide_mobile_promo&keyword=ai+machine+learning+tutorial&matchtype=b&network=g&utm_campaign=07-StanfordML-ROW&utm_content=07-StanfordML-ROW&utm_medium=sem&utm_source=gg)
+is a great starting point. 
 It's a very clear course, that doesn't dive too deep into the mathematical aspects but
 covers all the basics that you need.
     - If you liked the course above, you might want to take a look at the notes from other people who have followed it, e.g.: the blog entry
