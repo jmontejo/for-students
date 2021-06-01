@@ -94,7 +94,11 @@ setupATLAS
 ```
 This is an alias for `/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/user/atlasLocalSetup.sh`. 
 After you type it you will see a list of commands you can type to setup various ATLAS computing tools. 
-Which tools you need depends on the specific task you need to carry out. 
+Which tools you need depends on the specific task you need to carry out.
+E.g. to setup ROOT:
+```
+lsetup root
+```
 
 ## Copy files to your local machine
 
