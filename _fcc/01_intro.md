@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Introductory Material
 link: fcc/intro.html
 permalink: fcc/intro.html
 tags: fcc
@@ -9,7 +9,9 @@ image: images/fcc/fcc_logo
 ---
 
 #### FCC
-- [Academic training](https://fcc.web.cern.ch/Pages/news/FCC-Academic-Training.aspx)
+- [Academic training](https://fcc.web.cern.ch/Pages/news/FCC-Academic-Training.aspx). Eight lectures covering FCCee and FCCee from the point of view of physics potential, detectors, design and technical infrastructure.
+- [FCCee CDR](https://cds.cern.ch/record/2651299?ln=en). Conceptual Design Report for FCCee. 
+
 
 
 
