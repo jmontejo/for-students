@@ -5,7 +5,7 @@ permalink: fcc/intro.html
 tags: fcc
 layout: post
 description: "Introductory material to learn about FCCee and HNL"
-image: images/fcc/fcc_logo
+image: images/fcc/fcc_logo.jpeg
 ---
 
 #### FCC
