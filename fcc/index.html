@@ -1,0 +1,13 @@
+---
+layout: page
+title:  "FCC"
+permalink: fcc.html
+---
+
+  {%- if site.fcc.size > 0 -%}
+  {%- for project in site.fcc -%}
+  {% include projectitem.html %}
+  {%- endfor -%}
+  {%- endif -%}
+
+
