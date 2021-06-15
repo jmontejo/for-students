@@ -1,7 +1,7 @@
 ---
 title: Introductory Material
-link: rpvmj/intro.html
-permalink: rpvmj/intro.html
+link: multib/intro.html
+permalink: multib/intro.html
 tags: susy
 layout: post
 description: "Introductory material for SUSY multi-b searches"
