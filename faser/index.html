@@ -1,0 +1,13 @@
+---
+layout: page
+title:  "ForwArd Search ExpeRiment at the LHC"
+permalink: faser.html
+---
+
+  {%- if site.faser.size > 0 -%}
+  {%- for project in site.faser -%}
+  {% include projectitem.html %}
+  {%- endfor -%}
+  {%- endif -%}
+
+
