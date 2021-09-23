@@ -9,3 +9,4 @@ layout: home
 ---
 
 ![student](/students/images/general/student.jpg)
+<font size="2">Image by <a href="https://pixabay.com/users/startupstockphotos-690514/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=849822">StartupStockPhotos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=849822">Pixabay</a></font>
