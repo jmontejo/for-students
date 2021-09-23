@@ -8,3 +8,4 @@
 layout: home
 ---
 
+![student](/students/images/general/student.jpg)
