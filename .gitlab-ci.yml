@@ -27,7 +27,6 @@ build:
     paths:
       - public
 
-
 deploy:
   stage: deploy
   variables:
