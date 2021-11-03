@@ -37,7 +37,7 @@ collections:
 
 navigation:
   - name: Getting started
-    link: {{ site.baseurl }}{% link start.html %}
+    link: /jmontejo/students/start.html
   - name: RPV MJ
     link: /jmontejo/students/rpvmj.html
   - name: Multi-b
