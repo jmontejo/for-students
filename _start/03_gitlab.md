@@ -32,17 +32,17 @@ You should be able to login with your usual cern account.
 Then you can create a new project (a repository that contains
 all your files related to a certain topic)
 by clicking on `New project` here:
-![git1](/students/images/start/git/git1.png)
+![git1](/jmontejo/students/images/start/git/git1.png)
 
 And you fill all the fields following this:
 
-![git2](/students/images/start/git/git2.png)
+![git2](/jmontejo/students/images/start/git/git2.png)
 
 Then you go on the directory on lxplus or on your local machine where you have the code
 you want to put on GitLab (if it's on lxplus, you can access with the usual
 ssh you have been doing so far) and you follow the instructions for `Push an existing folder`.
 
-![git3](/students/images/start/git/git3.png)
+![git3](/jmontejo/students/images/start/git/git3.png)
 
 Notes:
 - If you set the remote repository through http, as in the example above,
