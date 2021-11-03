@@ -31,7 +31,7 @@ build:
 deploy:
   stage: deploy
   variables:
-    "EOS_PATH": "/eos/user/c/crizzi/www/students"
+    "EOS_PATH": "/eos/user/j/jmontejo/www/students"
   image: gitlab-registry.cern.ch/ci-tools/ci-web-deployer
   script:
     - deploy-eos
