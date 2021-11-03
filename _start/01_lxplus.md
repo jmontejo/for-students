@@ -51,7 +51,7 @@ To recap, the storage spaces where you can keep your files are:
 
 You can manace your services on the [CERN Resources Portal](https://resources.web.cern.ch/resources/).
 From there, select the tab `List services`. This will display all the available services:
-![services]({{ images/start/lxplus/services.png | relative_url }})
+![services]({{ site.baseurl }}{% link images/start/lxplus/services.png %})
 
 Please make sure you have subscribed to the following services:
 - LXPLUS and Linux (you should already be subscribed by default)
