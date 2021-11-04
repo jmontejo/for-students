@@ -30,10 +30,12 @@ plugins:
 collections:
   start:
     output: true
+  triggerAPI:
+    output: true
   rpvmj:
-    output: true
+    output: false
   multib:
-    output: true
+    output: false
 
 navigation:
   - name: Getting started
