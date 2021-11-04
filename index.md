@@ -7,7 +7,6 @@
 #
 layout: home
 ---
-Test
+All the material in these pages is written in markdown and stored in [git](https://gitlab.cern.ch/jmontejo/for-students/).
+If you find any mistake or outdated section please feel free to open a MR with the fix
 
-![student]({{ site.baseurl }}{% link images/general/student.jpg %})
-<font size="2">Image by <a href="https://pixabay.com/users/startupstockphotos-690514/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=849822">StartupStockPhotos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=849822">Pixabay</a></font>

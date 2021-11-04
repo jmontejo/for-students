@@ -1,0 +1,12 @@
+---
+layout: page
+title:  "TriggerAPI"
+permalink: triggerAPI.html
+---
+
+  {%- if site.triggerAPI.size > 0 -%}
+  {%- for project in site.triggerAPI -%}
+  {% include projectitem.html %}
+  {%- endfor -%}  
+  {%- endif -%}
+
