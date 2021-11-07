@@ -8,24 +8,6 @@ description: "Improvements and new features for TriggerAPI"
 image: images/triggerAPI/dev.jpeg
 ---
 
-## Extensions and fixes of the current code
-
-1. Include new UTT and Bphys-electrons categories. Check if TagAndProbe should be a category or a label
-2. Treat run numbers different from compound trigger periods
-3. Switch to Flag type for the enums. See [the docs](https://docs.python.org/3/library/enum.html)
-4. Include heavy-ion periods and types
-
-## Possible new features
-
-1. Get lists of triggers based on tags defined in TriggerMenuMT, via a new method `getTriggersLabeled("your-favourite-tag")`
-2. Get lists of triggers to be used in derivations, via a new method `getTriggersForDerivations(...)`. This would be an OR of primaries and specific labels.
-
-
-## Documentation
-
-1. Update the [twiki](https://twiki.cern.ch/twiki/bin/view/Atlas/TriggerAPI).
-2. Comment the python code
-
 ## How to develop
 
 First you need to download athena, which is the ATLAS framework. Athena is kept in git, the best is to go through the [ATLAS git tutorial](https://atlassoftwaredocs.web.cern.ch/gittutorial/), which also contains instructions on how to work with the packages
@@ -81,24 +63,43 @@ With this, the structure of your workfolder should be the following:
 ```
 
 
-## Workplan
+# Workplan
 
 The goal is to go through the following milestones
 
-#### First week
+## First week
 
 - Learn to use the terminal, if needed go through [tutorial 1](https://www.freecodecamp.org/news/linux-command-line-bash-tutorial/) or [tutorial 2](https://ryanstutorials.net/linuxtutorial/commandline.php)
 - Learn to use python, if needed go through [tutorial 1](https://www.learnpython.org) or [tutorial 2](https://realpython.com/python-first-steps/)
 - Learn to use git, if needed go through [tutorial 1](https://www.freecodecamp.org/news/learn-git-and-version-control-in-an-hour/) or [tutorial 2](https://towardsdatascience.com/version-control-with-git-get-started-in-less-than-15-minutes-696b4ce7ce92)
 
-Milestone 1, create a project in [gitlab](https://gitlab.cern.ch/), check it out in your workfolder in lxplus, and create a python script in the project. The script has to read the following file `/afs/cern.ch/user/j/jmontejo/public/HSSIP/combinedCLs_RPV1L_TT_rpvHF.json` (use the python json library). Every entry in the json contains the CLs values of an analysis, for different gluino masses and lifetimes (the physics is not relevant now). For every lifetime value find the maximum gluino mass for which CLs is less than 0.05.
+*Milestone 1:* create a project in [gitlab](https://gitlab.cern.ch/), check it out in your workfolder in lxplus, and create a python script in the project. The script has to read the following file `/afs/cern.ch/user/j/jmontejo/public/HSSIP/combinedCLs_RPV1L_TT_rpvHF.json` (use the python json library). Every entry in the json contains the CLs values of an analysis, for different gluino masses and lifetimes (the physics is not relevant now). For every lifetime value find the maximum gluino mass for which CLs is less than 0.05.
 
 - Setup the ATLAS athena framework, follow instructions in [ATLAS git tutorial](https://atlassoftwaredocs.web.cern.ch/gittutorial/)
 - Setup the working area as described here
 - Create your own fork of athena
 
-Milestone 2: modify TriggerAPI, adding a print statement with your name in the function getLowestUnprescaled. Commit to your fork, and open a merge request to [my fork](https://gitlab.cern.ch/jmontejo/athena). Then write a new python script in your project, which gets the list of all the muon lowest unprescaled triggers in 2018. Check that your name is printed out when using getLowestUnprescaled..
+*Milestone 2:* modify TriggerAPI, adding a print statement with your name in the function getLowestUnprescaled. Commit to your fork, and open a merge request to [my fork](https://gitlab.cern.ch/jmontejo/athena). Then write a new python script in your project, which gets the list of all the muon lowest unprescaled triggers in 2018. Check that your name is printed out when using getLowestUnprescaled..
 
-#### Second week
+## Second week
 
-- We will work on extending the features of TriggerAPI, depending on time and status of the previous week
+We will work on extending the features of TriggerAPI, depending on time and status of the previous week
+
+#### Extensions and fixes of the current code
+
+1. Include new UTT and Bphys-electrons categories. Check if TagAndProbe should be a category or a label
+2. Treat run numbers different from compound trigger periods
+3. Switch to Flag type for the enums. See [the docs](https://docs.python.org/3/library/enum.html)
+4. Include heavy-ion periods and types
+
+#### Possible new features
+
+1. Get lists of triggers based on tags defined in TriggerMenuMT, via a new method `getTriggersLabeled("your-favourite-tag")`
+2. Get lists of triggers to be used in derivations, via a new method `getTriggersForDerivations(...)`. This would be an OR of primaries and specific labels.
+
+
+#### Documentation
+
+1. Update the [twiki](https://twiki.cern.ch/twiki/bin/view/Atlas/TriggerAPI).
+2. Comment the python code
+

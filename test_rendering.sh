@@ -1,7 +1,7 @@
 mkdir testsite
 cd testsite
 for i in  _config.yml _start _triggerAPI images index.md start triggerAPI; do
-    cp -r ../$i .
+    cp -r -f ../$i .
 done
 git clone https://gitlab.cern.ch/jmontejo/jekyll-theme-jmontejo.git jekyll-theme-jmontejo
 cd jekyll-theme-jmontejo

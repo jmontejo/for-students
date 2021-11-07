@@ -17,13 +17,13 @@ In order to decide if the collision is interesting, it first has to reconstruct 
 #### A side note about rates
 The number of events per second is a rate, and that's how we usually measure them. The collision rate is 40 MHz, and we store 1 kHz of events.
 
-#### L1
+### L1
 The L1 trigger is based on hardware, not on software. It takes 2.5 microseconds to decide if we store a collision or not. In the time it takes to decide, another 100 collisions have already happened. The L1 system has enough buffer to store in memory 100 collisions while they are processed, so that none is lost. From the 40 MHz collision rate, the L1 trigger accepts 100 kHz as a strict maximum. The reconstruction at L1 is really minimal, we just look at energy in the calorimeter and in the muon spectrometer. But there is no time to reconstruct tracks, run jet clustering, or any sophisticated reconstruction. 
 
-#### HLT
+### HLT
 The High-level trigger is based on software, running on about 40000 computers. It reads every event accepted by L1, reconstructs it with some approximations, and decides which events to store. The HLT accepts about 1 kHz events on average.
 
-#### The trigger menu
+## The trigger menu
 In both steps, L1 and HLT, the trigger decides if the event is interesting or not. It does this based on the trigger menu. The trigger menu is a set of rules and criteria that we have defined, when they ae met we store the event. Some examples at HLT are:
 - At least one muon above 50 GeV
 - At least one isolated muon above 26 GeV
@@ -38,11 +38,11 @@ At L1 the reconstruction is much less precise, and there are no tracks, so we ne
 
 When the energy threshold is very high, only very few events pass, so that the _rate_ of the trigger is very low. If the energy threshold is low, the rate is much higher. The sum of rates of all triggers in the menu have to satisfy the constraints of the system, maximum 100 kHz at L1, 1 kHz at HLT. Therefore the trigger menu is a compromise between what we want for physics (store as many events as possible, i.e. low thresholds) and what we can afford technically. If we want to store more events with missing energy (lower the threshold from 110 GeV to 100 GeV for example) we will need to raise the energy threshold for other objects, so that the total rate is not above the limit.
 
-#### Trigger turn-on
+### Trigger turn-on
 To fill
 
-#### Prescales
+### Prescales
 Most rules in the trigger menu mean "store *all* events that satisfy this criteria". So that we can use all the collisions produced by the LHC. However, what do we do if we want to study events with a jet of 200 GeV? Those events are below the trigger threshold (at least one jet above 420 GeV) and are not stored. There are other rules in the trigger menu which have a _prescale_ value. A rule with a prescale of 10 means "store 1 event from every 10 that satisfy this criteria". This is usually done to record events with low energy. The rate of a trigger is much higher if we lower the energy threshold, but the rate of a prescaled trigger is reduced by a factor equal to the prescale.
 
-#### How to read trigger names
+### How to read trigger names
 To fill
