@@ -15,10 +15,10 @@ It is part of the athena framework that is used by ATLAS to reconstruct collisio
 
 ### What does it do
 
-All the triggers ever used by ATLAS and their prescale are stored in a database. TriggerAPI reads out that database, categorizes all triggers, and provides the users with information so that they know if a given trigger was prescaled, what triggers are available for a given selection, or if there are better triggers than what they are using.
+All the triggers ever used by ATLAS and their prescale are stored in a database. TriggerAPI reads out that database, categorises all triggers, and provides the users with information so that they know if a given trigger was prescaled, what triggers are available for a given selection, or if there are better triggers than what they are using.
 
-Triggers are categorized according to the objects that they use to select the event, such as electrons, muons, photons, jets, or missing transverse energy. The categories are represented by integer flags, and they can be combined.
-Triggers are also categorized according to the period when they were running. During a year, several periods of data-taking are defined during which the triggers are mostly stable.
+Triggers are categorised according to the objects that they use to select the event, such as electrons, muons, photons, jets, or missing transverse energy. The categories are represented by integer flags, and they can be combined.
+Triggers are also categorised according to the period when they were running. During a year, several periods of data-taking are defined during which the triggers are mostly stable.
 
 With this information, the user can retrieve the list of triggers with a selection in a certain period. For example, the list of all single-photon triggers in 2018. From all the possible single-photon triggers, some will be prescaled and are not very useful for physics, so analysers are mostly interested in _unprescaled_ triggers. Out of all the unprescaled triggers analysers, want the trigger that has the lowest energy threshold to select events. This is the lowest-unprescaled, and is the best trigger that one can use for analysis.
 Let's write a small python script to understand the 2018 single photon triggers.
@@ -32,7 +32,7 @@ from TriggerMenu.api.TriggerEnums import TriggerPeriod, TriggerType
 # Get a dictionary with all the 2018 single photon triggers and their prescale, with loose identification
 singlephoton = TriggerAPI.getAllHLT(TriggerPeriod.y2018, TriggerType.g_single, matchPattern="_loose$")
 
-# Just for visualization, sort them by their prescale and print
+# Just for visualisation, sort them by their prescale and print
 import operator
 sortedbyPS = sorted(singlephoton.items(), key=operator.itemgetter(1))
 for trigger, ps in sortedbyPS:
@@ -67,7 +67,7 @@ print( TriggerAPI.getLowestUnprescaled(TriggerPeriod.y2018, TriggerType.g_single
 ```
 And the output will be `HLT_g140_loose`.
 
-When reconstructing any object in the detector, we use some _identification_ criteria, which measures how probable it is that the energy deposited in the detector is indeed a photon (or any other object). Right now we are looking into _loose_, that means that we call a photon any energy deposity that looks roughly like a photon. With this we make sure that all or most of the real photons are identified, but unfortunately we also call photons a lot of stuff that is not actually a photon, like a $\pi_0$. These are usually called fake photons. By making the identification stronger, we reduce a lot of the fakes, but we also start to lose a small percent of the real photons. The optimal choice depends on the analysis. TriggerAPI is aware of all these variations, and shows the lowest-unprescaled of each kind, since they can not be compared directly. Let's look at all the options of multi-photon triggers:
+When reconstructing any object in the detector, we use some _identification_ criteria, which measures how probable it is that the energy deposited in the detector is indeed a photon (or any other object). Right now we are looking into _loose_, that means that we call a photon any energy deposit that looks roughly like a photon. With this we make sure that all or most of the real photons are identified, but unfortunately we also call photons a lot of stuff that is not actually a photon, like a $\pi_0$. These are usually called fake photons. By making the identification stronger, we reduce a lot of the fakes, but we also start to lose a small percent of the real photons. The optimal choice depends on the analysis. TriggerAPI is aware of all these variations, and shows the lowest-unprescaled of each kind, since they can not be compared directly. Let's look at all the options of multi-photon triggers:
 ```python
 multiphoton = TriggerAPI.getLowestUnprescaled(TriggerPeriod.y2018, TriggerType.g_multi)
 for trigger in multiphoton:
@@ -83,7 +83,7 @@ HLT_2g20_tight_icalovloose_L12EM15VHI
 HLT_2g25_loose_g15_loose
 ```
 
-Focusing for a moment on the three tiggers with same L12EM20VH, you can see how the energy threshold is much higher for the loose trigger `2g50_loose` than for for medium `g35_medium_g25_medium` or tight `2g25_tight`. It is up to the analyzer to decide which one is best for the purpose of the analysis.
+Focusing for a moment on the three triggers with same L12EM20VH, you can see how the energy threshold is much higher for the loose trigger `2g50_loose` than for for medium `g35_medium_g25_medium` or tight `2g25_tight`. It is up to the analyser to decide which one is best for the purpose of the analysis.
 
 ## Try out more of TriggerAPI
 

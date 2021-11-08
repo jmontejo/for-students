@@ -10,7 +10,7 @@ image: images/triggerAPI/trigger.png
 
 ## A hadron collider trigger
 
-In a hadron collider like the LHC, the number of collisions that we produce is insanely high, up to 40 millions per second, and every collision that we store takes about 1 Mb in disk. You can do the math, and see that it is absolutely imposible to store every collision that we produce. In addition, the vast majority of the LHC collisions are very boring, just low-energy QCD which we already know very precisely. Therefore we introduce a *trigger*, which is a system that looks at every collisions, and decides if it looks interesting enough to store in disk or not. From the 40 million collisions per second, it stores just about 1000 of them to disk. Every collision that is not stored is lost forever, therefore it is critical to have a good trigger. 
+In a hadron collider like the LHC, the number of collisions that we produce is insanely high, up to 40 millions per second, and every collision that we store takes about 1 Mb in disk. You can do the math, and see that it is absolutely impossible to store every collision that we produce. In addition, the vast majority of the LHC collisions are very boring, just low-energy QCD which we already know very precisely. Therefore we introduce a *trigger*, which is a system that looks at every collisions, and decides if it looks interesting enough to store in disk or not. From the 40 million collisions per second, it stores just about 1000 of them to disk. Every collision that is not stored is lost forever, therefore it is critical to have a good trigger. 
 
 In order to decide if the collision is interesting, it first has to reconstruct it. But reconstructing an event takes way more than 25 nanoseconds (1 over 40 million), the reconstruction of an ATLAS event takes about 1 second when done with full precision. So the trigger has to run a much faster reconstruction, which of course as worse precision. This is done in two steps, the Level-1 trigger (L1) and the High-level trigger (HLT).
 
@@ -24,7 +24,7 @@ The L1 trigger is based on hardware, not on software. It takes 2.5 microseconds 
 The High-level trigger is based on software, running on about 40000 computers. It reads every event accepted by L1, reconstructs it with some approximations, and decides which events to store. The HLT accepts about 1 kHz events on average.
 
 ## The trigger menu
-In both steps, L1 and HLT, the trigger decides if the event is interesting or not. It does this based on the trigger menu. The trigger menu is a set of rules and criteria that we have defined, when they ae met we store the event. Some examples at HLT are:
+In both steps, L1 and HLT, the trigger decides if the event is interesting or not. It does this based on the trigger menu. The trigger menu is a set of rules and criteria that we have defined, when they are met we store the event. Some examples at HLT are:
 - At least one muon above 50 GeV
 - At least one isolated muon above 26 GeV
 - At least one jet above 420 GeV

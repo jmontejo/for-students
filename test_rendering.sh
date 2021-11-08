@@ -1,5 +1,5 @@
-mkdir testsite
-cd testsite
+mkdir localtestsite
+cd localtestsite
 for i in  _config.yml _start _triggerAPI images index.md start triggerAPI; do
     cp -r -f ../$i .
 done

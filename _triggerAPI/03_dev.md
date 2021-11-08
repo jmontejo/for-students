@@ -43,7 +43,7 @@ cd run
 source ../x86_64-centos7-gcc8-opt/setup.sh
 ```
 
-And now you can write here your python scripts to test, or run `runTriggerAPIExample.py` for example. Once everything is setup, since the code is in python there is no need to compile. But everytime you start a new working session you need to prepare the environment. The best practice is to put the following into a `setup.sh` and just `source setup.sh` in every session.
+And now you can write here your python scripts to test, or run `runTriggerAPIExample.py` for example. Once everything is setup, since the code is in python there is no need to compile. But every time you start a new working session you need to prepare the environment. The best practice is to put the following into a `setup.sh` and just `source setup.sh` in every session.
 ```
 setupATLAS
 asetup Athena,latest,master
@@ -53,7 +53,7 @@ source build/x86_64-centos7-gcc8-opt/setup.sh
 
 The asetup call configures the ATLAS athena framework, this is already precompiled and installed in lxplus. The source build/... tells the system to use your packages instead of the official ones. If you modify TriggerAPI but forget this source, every script will use the official package and you won't see your modifications.
 
-With this, the structure of your workfolder should be the following:
+With this, the structure of your work folder should be the following:
 ```
 |- workfolder
     |- athena
@@ -63,7 +63,7 @@ With this, the structure of your workfolder should be the following:
 ```
 
 
-# Workplan
+# Work plan
 
 The goal is to go through the following milestones
 
