@@ -73,7 +73,7 @@ The goal is to go through the following milestones
 - Learn to use python, if needed go through [tutorial 1](https://www.learnpython.org) or [tutorial 2](https://realpython.com/python-first-steps/)
 - Learn to use git, if needed go through [tutorial 1](https://www.freecodecamp.org/news/learn-git-and-version-control-in-an-hour/) or [tutorial 2](https://towardsdatascience.com/version-control-with-git-get-started-in-less-than-15-minutes-696b4ce7ce92)
 
-*Milestone 1:* create a project in [gitlab](https://gitlab.cern.ch/), check it out in your workfolder in lxplus, and create a python script in the project. The script has to read the following file `/afs/cern.ch/user/j/jmontejo/public/HSSIP/combinedCLs_RPV1L_TT_rpvHF.json` (use the python json library). Every entry in the json contains the CLs values of an analysis, for different gluino masses and lifetimes (the physics is not relevant now). For every lifetime value find the maximum gluino mass for which CLs is less than 0.05.
+*Milestone 1:* create a project in [gitlab](https://gitlab.cern.ch/), check it out in your workfolder in lxplus, and create a python script in the project. The script has to read the following file `/afs/cern.ch/user/j/jmontejo/public/HSSIP/combinedCLs_RPV1L_GG_rpvHF.json` (use the python json library). Every entry in the json contains the CLs values of an analysis, for different gluino masses and lifetimes (the physics is not relevant now). For every lifetime value find the maximum gluino mass for which CLs is less than 0.05.
 
 - Setup the ATLAS athena framework, follow instructions in [ATLAS git tutorial](https://atlassoftwaredocs.web.cern.ch/gittutorial/)
 - Setup the working area as described here
