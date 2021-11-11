@@ -40,7 +40,7 @@ In order to run it is best to have outside yet another folder, so that it doesn'
 ```
 mkdir run
 cd run
-source ../x86_64-centos7-gcc8-opt/setup.sh
+source ../build/x86_64-centos7-gcc8-opt/setup.sh
 ```
 
 And now you can write here your python scripts to test, or run `runTriggerAPIExample.py` for example. Once everything is setup, since the code is in python there is no need to compile. But every time you start a new working session you need to prepare the environment. The best practice is to put the following into a `setup.sh` and just `source setup.sh` in every session.

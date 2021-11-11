@@ -92,7 +92,11 @@ To setup the ATLAS software environment on lxplus, you can simply do:
 ```
 setupATLAS
 ```
-This is an alias for `/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/user/atlasLocalSetup.sh`. 
+This will require to have defined the alias beforehand (this should go into your `.bashrc` so that it's automaticallly run in every session that you start)
+```
+export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
+```
 After you type it you will see a list of commands you can type to setup various ATLAS computing tools. 
 Which tools you need depends on the specific task you need to carry out.
 E.g. to setup ROOT:
