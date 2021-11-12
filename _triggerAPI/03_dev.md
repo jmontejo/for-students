@@ -87,10 +87,10 @@ We will work on extending the features of TriggerAPI, depending on time and stat
 
 #### Extensions and fixes of the current code
 
-1. Include new UTT and Bphys-electrons categories. Check if TagAndProbe should be a category or a label
+2. Switch to Flag type for the enums. See [the docs](https://docs.python.org/3/library/enum.html)
 2. Treat run numbers different from compound trigger periods
-3. Switch to Flag type for the enums. See [the docs](https://docs.python.org/3/library/enum.html)
-4. Include heavy-ion periods and types
+3. Include heavy-ion periods and types
+4. Include new UTT and Bphys-electrons categories. Check if TagAndProbe should be a category or a label
 
 #### Possible new features
 
