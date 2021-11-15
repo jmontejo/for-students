@@ -87,10 +87,23 @@ We will work on extending the features of TriggerAPI, depending on time and stat
 
 #### Extensions and fixes of the current code
 
-2. Switch to Flag type for the enums. See [the docs](https://docs.python.org/3/library/enum.html)
+1. Switch to Flag type for the enums. See [the docs](https://docs.python.org/3/library/enum.html)
 2. Treat run numbers different from compound trigger periods
 3. Include heavy-ion periods and types
 4. Include new UTT and Bphys-electrons categories. Check if TagAndProbe should be a category or a label
+
+#### Heavy-ion developments
+
+The following steps are needed to include heavy-ions into TriggerAPI
+
+1. New periods y2015PbPb (led-led collisions), y2016pPb (proton-led), y2017XeXe (xenon-xenon), and y2018PbPb
+2. New categories upc (contains "upc"), minbias (contains "zdcpeb"), and ucc (contains "ucc")
+3. Add the new GRLs
+    - https://atlas-groupdata.web.cern.ch/atlas-groupdata/GoodRunsLists/data15_hi/20190708/data15_hi.periodAllYear_DetStatus-v105-pro22-13_Unknown_PHYS_HeavyIonP_All_Good_tolerable_L1CALmisconfigSatBCID.xml
+    - https://atlas-groupdata.web.cern.ch/atlas-groupdata/GoodRunsLists/data16_hip/20190708/data16_hip5TeV.periodAllYear_DetStatus-v105-pro22-13_Unknown_PHYS_HeavyIonP_All_Good.xml
+    - https://atlas-groupdata.web.cern.ch/atlas-groupdata/GoodRunsLists/data16_hip/20190708/data16_hip8TeV.periodAllYear_DetStatus-v105-pro22-13_Unknown_PHYS_HeavyIonP_All_Good.xml
+    - https://atlas-groupdata.web.cern.ch/atlas-groupdata/GoodRunsLists/data17_hi/20190706/data17_hi.periodAllYear_DetStatus-v105-pro22-13_Unknown_PHYS_StandardGRL_All_Good.xml
+    - https://atlas-groupdata.web.cern.ch/atlas-groupdata/GoodRunsLists/data18_hi/20190731/data18_hi.periodAllYear_DetStatus-v106-pro22-14_Unknown_PHYS_HeavyIonP_All_Good.xml
 
 #### Possible new features
 
